@@ -23,7 +23,7 @@ body {
   padding: 12px;
 }
 
-/* TOP SECTION */
+/* HERO */
 .hero {
   background: white;
   border-radius: 14px;
@@ -53,8 +53,8 @@ h1 {
 /* BADGES */
 .badges span {
   display: inline-block;
-  border: 1px solid #d60000;
-  color: #d60000;
+  border: 1px solid #000;
+  color: #000;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 12px;
@@ -70,9 +70,17 @@ h1 {
   box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
+/* DIVIDER LINE */
+.divider {
+  height: 1px;
+  background: #000;
+  margin: 10px 0 14px;
+  opacity: 0.1;
+}
+
 h2 {
   font-size: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 600;
 }
 
@@ -84,13 +92,19 @@ p {
 
 /* CONTACT */
 .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 12px;
+}
+
+.icon {
+  font-size: 18px;
 }
 
 .label {
   font-size: 11px;
   color: #888;
-  margin-bottom: 2px;
 }
 
 .value {
@@ -110,7 +124,7 @@ p {
   border-radius: 10px;
 }
 
-/* FOOTER BUTTONS */
+/* FOOTER */
 .footer-bar {
   position: fixed;
   bottom: 0;
@@ -125,7 +139,6 @@ p {
   padding: 16px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 14px;
 }
 
 .call {
@@ -147,7 +160,7 @@ p {
 
   <div class="hero">
     <div class="logo">
-      <img src="images/logo.png" alt="W. BINNS logo">
+      <img src="images/logo.png">
     </div>
 
 ```
@@ -166,20 +179,34 @@ p {
   </div>
 
   <div class="card">
-    <div class="contact-item">
-      <div class="label">PHONE</div>
-      <div class="value">07521 913 164</div>
-    </div>
 
 ```
 <div class="contact-item">
-  <div class="label">EMAIL</div>
-  <div class="value">cjz1@hotmail.co.uk</div>
+  <div class="icon">📞</div>
+  <div>
+    <div class="label">PHONE</div>
+    <div class="value">07521 913 164</div>
+  </div>
 </div>
 
+<div class="divider"></div>
+
 <div class="contact-item">
-  <div class="label">AREA</div>
-  <div class="value">Kirklees & Calderdale</div>
+  <div class="icon">✉</div>
+  <div>
+    <div class="label">EMAIL</div>
+    <div class="value">cjz1@hotmail.co.uk</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="contact-item">
+  <div class="icon">📍</div>
+  <div>
+    <div class="label">AREA</div>
+    <div class="value">Kirklees & Calderdale</div>
+  </div>
 </div>
 ```
 
@@ -187,6 +214,7 @@ p {
 
   <div class="card">
     <h2>About</h2>
+    <div class="divider"></div>
     <p>
       Time served plumbing and heating engineer offering reliable work, tidy finishes and straightforward service you can trust.
     </p>
@@ -194,6 +222,7 @@ p {
 
   <div class="card">
     <h2>Services</h2>
+    <div class="divider"></div>
     <p>
       Bathrooms, boilers, heating systems, hot water installations, repairs and general plumbing.
     </p>
@@ -201,6 +230,7 @@ p {
 
   <div class="card">
     <h2>Recent Work</h2>
+    <div class="divider"></div>
     <div class="gallery">
       <img src="images/work-1.jpg">
       <img src="images/work-3.jpg">
