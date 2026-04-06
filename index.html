@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W. BINNS Plumbing & Heating Engineers</title>
+  <meta name="description" content="W. BINNS Plumbing & Heating Engineers. Bathrooms, boilers, heating systems and general plumbing across Kirklees and Calderdale." />
+  <style>
+    :root {
+      --bg: #f7f4f4;
+      --surface: #ffffff;
+      --text: #181818;
+      --muted: #666060;
+      --line: #e8e1e1;
+      --brand: #f51b22;
+      --brand-dark: #c41212;
+      --shadow: 0 14px 30px rgba(30, 18, 18, 0.08);
+      --radius: 22px;
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .page {
+      width: min(var(--max), calc(100% - 24px));
+      margin: 0 auto;
+      padding: 18px 0 88px;
+    }
+
+    .brand-card,
+    .info-card,
+    .contact-card,
+    .gallery-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .brand-card {
+      padding: 22px 18px;
+      text-align: center;
+      margin-bottom: 16px;
+      border-top: 5px solid var(--brand);
+    }
+
+    .brand-card img {
+      height: 110px;
+      width: auto;
+      object-fit: contain;
+      margin: 0 auto 14px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.05;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .tagline {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    .chip {
+      background: #fff5f5;
+      color: var(--brand-dark);
+      border: 1px solid #ffd8d8;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .contact-grid {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .contact-card {
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: #fff1f1;
+      color: var(--brand-dark);
+      font-size: 18px;
+      flex: 0 0 42px;
+    }
+
+    .contact-card strong {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .contact-card span {
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    .info-card {
+      padding: 20px 18px;
+      margin-bottom: 16px;
+    }
+
+    .info-card h2,
+    .gallery-card h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .info-card p,
+    .gallery-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .gallery-card {
+      padding: 20px 18px;
+      margin-bottom: 16px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      object-fit: cover;
+    }
+
+    .floating-bar {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      z-index: 50;
+    }
+
+    .floating-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 52px;
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+    }
+
+    .floating-btn.call {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .floating-btn.email {
+      background: #fff;
+      color: #111;
+      border: 1px solid var(--line);
+    }
+
+    @media (min-width: 700px) {
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="brand-card">
+      <img src="images/logo.png" alt="W. BINNS Plumbing & Heating Engineers logo" />
+      <h1>Hello, I’m Craig</h1>
+      <p class="tagline">I run W. BINNS Plumbing &amp; Heating Engineers, covering bathrooms, boilers, heating systems and general plumbing across Kirklees and Calderdale.</p>
+      <div class="chips">
+        <span class="chip">Gas Safe Registered</span>
+        <span class="chip">25 Years Experience</span>
+      </div>
+    </section>
+
+    <section class="contact-grid">
+      <a class="contact-card" href="tel:+447521913164">
+        <div class="icon">☎</div>
+        <div>
+          <strong>Phone</strong>
+          <span>07521 913 164</span>
+        </div>
+      </a>
+
+      <a class="contact-card" href="mailto:cjz1@hotmail.co.uk">
+        <div class="icon">✉</div>
+        <div>
+          <strong>Email</strong>
+          <span>cjz1@hotmail.co.uk</span>
+        </div>
+      </a>
+
+      <div class="contact-card">
+        <div class="icon">⌂</div>
+        <div>
+          <strong>Area Covered</strong>
+          <span>Kirklees &amp; Calderdale</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-card">
+      <h2>About the business</h2>
+      <p>Time served plumbing and heating engineer offering reliable work, tidy finishes and straightforward service for homes across Kirklees and Calderdale.</p>
+    </section>
+
+    <section class="info-card">
+      <h2>Services</h2>
+      <p>Bathrooms and shower rooms, boiler work, hot water systems, heating installs, utility room plumbing and general plumbing jobs.</p>
+    </section>
+
+    <section class="gallery-card">
+      <h2>Recent work</h2>
+      <p>A few examples of recent bathroom and heating work.</p>
+      <div class="gallery-grid">
+        <img src="images/work-1.jpg" alt="Bathroom installation" />
+        <img src="images/work-3.jpg" alt="Heating installation" />
+        <img src="images/work-5.jpg" alt="Bathroom furniture installation" />
+        <img src="images/work-12.jpg" alt="Ensuite shower room installation" />
+      </div>
+    </section>
+  </main>
+
+  <div class="floating-bar">
+    <a class="floating-btn call" href="tel:+447521913164">☎ Call</a>
+    <a class="floating-btn email" href="mailto:cjz1@hotmail.co.uk">✉ Email</a>
+  </div>
+</body>
+</html>

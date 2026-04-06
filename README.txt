@@ -1,0 +1,1 @@
+W. BINNS GitHub upload package\n\nUpload everything in this folder to your GitHub repo:\n- index.html\n- images/\n
