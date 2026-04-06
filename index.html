@@ -15,7 +15,6 @@
     --muted: #555;
     --red: #d60000;
     --soft-red: #fff1f1;
-    --shadow: 0 6px 18px rgba(0,0,0,0.06);
     --radius: 16px;
   }
 
@@ -51,7 +50,6 @@
   .card {
     background: var(--card);
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
   }
 
   .hero {
@@ -102,9 +100,17 @@
   }
 
   h2 {
-    margin: 0 0 10px;
+    margin: 0;
     font-size: 18px;
     font-weight: 700;
+    text-align: center;
+  }
+
+  .section-line {
+    width: 64px;
+    height: 2px;
+    background: #000;
+    margin: 10px auto 14px;
   }
 
   p {
@@ -229,9 +235,12 @@
   </section>
 
   <section class="card">
-    <div class="contact-list">
+    <h2>Contact</h2>
+    <div class="section-line"></div>
 
 ```
+<div class="contact-list">
+
   <a class="contact-item" href="tel:07521913164">
     <div class="icon-wrap" aria-hidden="true">
       <svg viewBox="0 0 24 24">
@@ -277,6 +286,7 @@
 
   <section class="card">
     <h2>About</h2>
+    <div class="section-line"></div>
     <p>
       Time served plumbing and heating engineer offering reliable work, tidy finishes and straightforward service you can trust.
     </p>
@@ -284,6 +294,7 @@
 
   <section class="card">
     <h2>Services</h2>
+    <div class="section-line"></div>
     <p>
       Bathrooms, boilers, heating systems, hot water installations, repairs and general plumbing.
     </p>
@@ -291,6 +302,7 @@
 
   <section class="card">
     <h2>Recent Work</h2>
+    <div class="section-line"></div>
     <div class="gallery">
       <img src="images/work-1.jpg" alt="Recent plumbing work 1">
       <img src="images/work-3.jpg" alt="Recent plumbing work 2">
