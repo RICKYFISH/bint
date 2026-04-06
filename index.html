@@ -9,13 +9,12 @@
 
 <style>
   :root {
-    --bg: #f4f4f4;
+    --bg: #ffffff;
     --card: #ffffff;
     --text: #1f1f1f;
     --muted: #555;
     --red: #d60000;
     --soft-red: #fff1f1;
-    --radius: 16px;
   }
 
   * {
@@ -42,20 +41,18 @@
   .container {
     max-width: 600px;
     margin: 0 auto;
-    padding: 14px;
-    padding-bottom: 92px;
+    padding: 18px 14px 92px;
   }
 
   .hero,
   .card {
     background: var(--card);
-    border-radius: var(--radius);
   }
 
   .hero {
     text-align: center;
-    padding: 24px 18px;
-    margin-bottom: 14px;
+    padding: 10px 0 20px;
+    margin-bottom: 18px;
   }
 
   .logo img {
@@ -95,22 +92,14 @@
   }
 
   .card {
-    padding: 18px;
-    margin-bottom: 14px;
+    padding: 14px 0;
+    margin-bottom: 18px;
   }
 
   h2 {
-    margin: 0;
+    margin: 0 0 12px;
     font-size: 18px;
     font-weight: 700;
-    text-align: center;
-  }
-
-  .section-line {
-    width: 64px;
-    height: 2px;
-    background: #000;
-    margin: 10px auto 14px;
   }
 
   p {
@@ -122,7 +111,7 @@
 
   .contact-list {
     display: grid;
-    gap: 14px;
+    gap: 16px;
   }
 
   .contact-item {
@@ -236,7 +225,6 @@
 
   <section class="card">
     <h2>Contact</h2>
-    <div class="section-line"></div>
 
 ```
 <div class="contact-list">
@@ -286,7 +274,6 @@
 
   <section class="card">
     <h2>About</h2>
-    <div class="section-line"></div>
     <p>
       Time served plumbing and heating engineer offering reliable work, tidy finishes and straightforward service you can trust.
     </p>
@@ -294,7 +281,6 @@
 
   <section class="card">
     <h2>Services</h2>
-    <div class="section-line"></div>
     <p>
       Bathrooms, boilers, heating systems, hot water installations, repairs and general plumbing.
     </p>
@@ -302,7 +288,6 @@
 
   <section class="card">
     <h2>Recent Work</h2>
-    <div class="section-line"></div>
     <div class="gallery">
       <img src="images/work-1.jpg" alt="Recent plumbing work 1">
       <img src="images/work-3.jpg" alt="Recent plumbing work 2">
