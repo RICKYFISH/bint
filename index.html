@@ -209,6 +209,14 @@ h1 {
   color: var(--text);
 }
 
+.swipe-hint {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .trust-card {
   display: grid;
   grid-template-columns: 86px 1fr;
@@ -304,16 +312,35 @@ h1 {
 }
 
 .gallery {
+  width: calc(100% + 26px);
+  margin-left: -13px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(230px, 78%);
+  gap: 10px;
+  overflow-x: auto;
+  padding: 2px 13px 16px;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 13px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border-radius: 999px;
 }
 
 .gallery img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 7px;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+  scroll-snap-align: start;
 }
 
 .quote {
@@ -404,7 +431,22 @@ h1 {
   .services { grid-template-columns: repeat(3, 1fr); gap: 12px; }
   .service { align-items: start; padding: 16px; }
   .service strong { font-size: 18px; }
-  .gallery { grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .swipe-hint { display: none; }
+  .gallery {
+    width: 100%;
+    margin-left: 0;
+    grid-auto-flow: row;
+    grid-auto-columns: initial;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    overflow: visible;
+    padding: 0;
+    scroll-snap-type: none;
+  }
+  .gallery img {
+    aspect-ratio: 1 / 1;
+    box-shadow: none;
+  }
   .sticky-cta { display: none; }
   .footer { padding-bottom: 34px; }
 }
@@ -523,12 +565,13 @@ h1 {
     <div class="wrap">
       <div class="section-title">
         <h2 id="work-title">Recent work</h2>
+        <span class="swipe-hint">Swipe to view more</span>
       </div>
-      <div class="gallery">
-        <img src="images/work-1.jpg" alt="Recent plumbing work" width="540" height="540" loading="lazy">
-        <img src="images/work-3.jpg" alt="Recent heating work" width="540" height="540" loading="lazy">
-        <img src="images/work-5.jpg" alt="Recent bathroom work" width="540" height="540" loading="lazy">
-        <img src="images/work-12.jpg" alt="Recent shower room work" width="540" height="540" loading="lazy">
+      <div class="gallery" aria-label="Swipeable recent work gallery">
+        <img src="images/work-1.jpg" alt="Recent plumbing work" width="540" height="675" loading="lazy">
+        <img src="images/work-3.jpg" alt="Recent heating work" width="540" height="675" loading="lazy">
+        <img src="images/work-5.jpg" alt="Recent bathroom work" width="540" height="675" loading="lazy">
+        <img src="images/work-12.jpg" alt="Recent shower room work" width="540" height="675" loading="lazy">
       </div>
     </div>
   </section>
