@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 658 465" role="img" aria-labelledby="title desc">
+  <title id="title">Ideal Boilers logo</title>
+  <desc id="desc">Ideal Boilers brand logo for preferred boiler information.</desc>
+  <rect width="658" height="465" fill="#fff"/>
+  <path d="M43 64C43 48 54 41 70 38c172-31 347-31 519 0 16 3 26 10 26 26v187c0 16-10 24-26 27-172 31-347 31-519 0-16-3-27-11-27-27Z" fill="#067391"/>
+  <circle cx="108" cy="94" r="16" fill="#f23232"/>
+  <circle cx="104" cy="91" r="9" fill="#ff7b7b" opacity=".8"/>
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="86" y="244" font-size="214" letter-spacing="-12">ideal</text>
+  </g>
+  <text x="88" y="386" fill="#555" font-family="Arial, Helvetica, sans-serif" font-size="82" letter-spacing="28">BOILERS</text>
+  <path d="M60 411c166 24 368 25 538 0-147 32-392 32-538 0Z" fill="#575757" opacity=".9"/>
+</svg>
