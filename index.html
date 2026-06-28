@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>W. BINNS Plumbing & Heating Engineers | Kirklees & Calderdale</title>
-<meta name="description" content="Gas Safe registered plumber and heating engineer covering Kirklees and Calderdale. Call Craig at W. BINNS for bathrooms, boilers, heating and general plumbing.">
+<meta name="description" content="Gas Safe registered plumber and heating engineer covering Kirklees and Calderdale. Call W. BINNS for bathrooms, boilers, heating and general plumbing.">
 <meta name="theme-color" content="#d60000">
 <meta property="og:title" content="W. BINNS Plumbing & Heating Engineers">
 <meta property="og:description" content="Local Gas Safe registered plumbing and heating engineer covering Kirklees and Calderdale.">
@@ -248,47 +248,41 @@ h1 {
 
 .services {
   display: grid;
-  gap: 8px;
+  gap: 9px;
 }
 
 .service {
+  position: relative;
   display: grid;
-  grid-template-columns: 38px 1fr;
-  align-items: center;
-  gap: 10px;
-  padding: 12px;
+  gap: 3px;
+  padding: 14px 14px 14px 18px;
   border: 1px solid var(--line);
+  border-left: 4px solid var(--red);
   border-radius: 7px;
   background: var(--white);
 }
 
-.icon {
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border-radius: 7px;
-  background: #fff0f0;
-  color: var(--red);
-}
-
-.icon svg {
-  width: 21px;
-  height: 21px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.1;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.service::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #c7c7c7;
+  border-right: 2px solid #c7c7c7;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .service strong {
   display: block;
+  padding-right: 20px;
   font-size: 16px;
 }
 
 .service span {
   display: block;
+  padding-right: 20px;
   color: var(--muted);
   font-size: 13px;
 }
@@ -429,7 +423,7 @@ h1 {
   .quick-facts { grid-template-columns: repeat(4, 1fr); max-width: 820px; }
   .section { padding: 56px 0; }
   .services { grid-template-columns: repeat(3, 1fr); gap: 12px; }
-  .service { align-items: start; padding: 16px; }
+  .service { min-height: 96px; padding: 17px 18px; }
   .service strong { font-size: 18px; }
   .swipe-hint { display: none; }
   .gallery {
@@ -458,7 +452,7 @@ h1 {
   "name": "W. BINNS Plumbing & Heating Engineers",
   "image": "images/logo.png",
   "telephone": "+447521913164",
-  "email": "cjz1@hotmail.co.uk",
+  "email": "cjz20@icloud.com",
   "areaServed": ["Kirklees", "Calderdale"],
   "address": {
     "@type": "PostalAddress",
@@ -497,10 +491,10 @@ h1 {
     <div class="wrap">
       <span class="badge">Local plumbing &amp; heating</span>
       <h1>Hello, I'm Craig.</h1>
-      <p class="lead">Gas Safe registered plumbing and heating engineer for bathrooms, boilers, heating and general repairs.</p>
+      <p class="lead">I'm a Gas Safe registered plumbing and heating engineer for bathrooms, boilers, heating and general repairs.</p>
       <div class="actions">
         <a class="btn" href="tel:07521913164">Call 07521 913 164</a>
-        <a class="btn light" href="mailto:cjz1@hotmail.co.uk?subject=Quote%20request%20-%20W.%20BINNS%20Plumbing%20%26%20Heating">Email for a quote</a>
+        <a class="btn light" href="mailto:cjz20@icloud.com?subject=Quote%20request%20-%20W.%20BINNS%20Plumbing%20%26%20Heating">Email for a quote</a>
       </div>
       <div class="quick-facts" aria-label="Trust points">
         <div class="fact">Gas Safe<span>Registered</span></div>
@@ -530,12 +524,12 @@ h1 {
         <p>Reliable help for the jobs homeowners actually need sorting.</p>
       </div>
       <div class="services">
-        <div class="service"><span class="icon"><svg viewBox="0 0 24 24"><path d="M4 11h16v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M7 11V6a3 3 0 0 1 6 0"/></svg></span><div><strong>Bathrooms</strong><span>Plumbing, showers and upgrades</span></div></div>
-        <div class="service"><span class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6"/><path d="M9 13h6"/></svg></span><div><strong>Boilers</strong><span>Installations and replacements</span></div></div>
-        <div class="service"><span class="icon"><svg viewBox="0 0 24 24"><path d="M4 14a8 8 0 1 1 16 0"/><path d="M4 14h16"/><path d="M8 14v5"/><path d="M16 14v5"/></svg></span><div><strong>Heating</strong><span>Radiators, controls and faults</span></div></div>
-        <div class="service"><span class="icon"><svg viewBox="0 0 24 24"><path d="M12 2s6 6.1 6 11a6 6 0 0 1-12 0c0-4.9 6-11 6-11z"/></svg></span><div><strong>Hot Water</strong><span>Repairs and installations</span></div></div>
-        <div class="service"><span class="icon"><svg viewBox="0 0 24 24"><path d="m14.7 6.3 3 3"/><path d="M4 20l4.5-1 9.2-9.2a2.1 2.1 0 0 0-3-3L5.5 16z"/></svg></span><div><strong>Repairs</strong><span>Leaks, faults and fixes</span></div></div>
-        <div class="service"><span class="icon"><svg viewBox="0 0 24 24"><path d="M3 12h7"/><path d="M14 12h7"/><path d="M10 8v8"/><path d="M14 8v8"/></svg></span><div><strong>General Plumbing</strong><span>Everyday plumbing work</span></div></div>
+        <div class="service"><strong>Bathrooms</strong><span>Plumbing, showers and upgrades</span></div>
+        <div class="service"><strong>Boilers</strong><span>Installations and replacements</span></div>
+        <div class="service"><strong>Heating</strong><span>Radiators, controls and faults</span></div>
+        <div class="service"><strong>Hot Water</strong><span>Repairs and installations</span></div>
+        <div class="service"><strong>Repairs</strong><span>Leaks, faults and fixes</span></div>
+        <div class="service"><strong>General Plumbing</strong><span>Everyday plumbing work</span></div>
       </div>
     </div>
   </section>
@@ -543,10 +537,10 @@ h1 {
   <section class="quote" aria-labelledby="quote-title">
     <div class="wrap">
       <h2 id="quote-title">Want a quote?</h2>
-      <p>Call Craig, or email the job details and photos if you have them.</p>
+      <p>Call me, or email the job details and photos if you have them.</p>
       <div class="actions">
         <a class="btn" href="tel:07521913164">Call now</a>
-        <a class="btn light" href="mailto:cjz1@hotmail.co.uk?subject=Quote%20request%20-%20W.%20BINNS%20Plumbing%20%26%20Heating">Email Craig</a>
+        <a class="btn light" href="mailto:cjz20@icloud.com?subject=Quote%20request%20-%20W.%20BINNS%20Plumbing%20%26%20Heating">Email me</a>
       </div>
     </div>
   </section>
@@ -556,7 +550,7 @@ h1 {
       <img class="boiler-logo" src="images/ideal-boilers-logo.svg" alt="Ideal Boilers logo" width="190" height="134" loading="lazy">
       <div>
         <h2 id="boiler-title">Ideal Boilers preferred</h2>
-        <p>Craig often recommends Ideal Boilers, but can work with all major boiler brands.</p>
+        <p>I prefer to use Ideal Boilers where they suit the job, but I can work with all major boiler brands.</p>
       </div>
     </div>
   </section>
@@ -583,14 +577,14 @@ h1 {
     <p>W. BINNS Plumbing &amp; Heating Engineers</p>
     <p>Gas Safe Registered No. 979113</p>
     <a href="tel:07521913164">07521 913 164</a>
-    <a href="mailto:cjz1@hotmail.co.uk">cjz1@hotmail.co.uk</a>
+    <a href="mailto:cjz20@icloud.com">cjz20@icloud.com</a>
     <p>Kirklees &amp; Calderdale</p>
   </div>
 </footer>
 
 <div class="sticky-cta" aria-label="Quick contact">
   <a class="call" href="tel:07521913164">Call</a>
-  <a class="email" href="mailto:cjz1@hotmail.co.uk">Email</a>
+  <a class="email" href="mailto:cjz20@icloud.com">Email</a>
 </div>
 </body>
 </html>
